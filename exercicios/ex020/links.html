@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+        /* SELETORES PERSONALIZADOS
+            # = id
+            . = class
+            : = pseudoclasse
+            :: = pseudoelemento
+            > = filho direto/children
+        */
+
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        a{
+            color: chocolate;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:hover{
+            color: black;
+            text-decoration: underline;
+        }
+
+        a:visited{
+            color: darkgreen;
+        }
+
+        a:active{
+            color: red;
+        }
+
+        a::after{
+            content: " link";
+            font-weight: normal;
+            text-decoration: none;
+            color: gold;
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalizando Links</h1>
+    <ul>
+        <li><a href="https://github.com/santos-dev011" rel="_blank">Repositório do Github</a></li>
+        <li><a href="https://www.youtube.com/@sev7nnz" rel="_blank">Canal do youtube</a></li>
+        <li><a href="https://www.cursoemvideo.com" rel="_blank">Site do curso em video</a></li>
+    </ul>
+</body>
+</html>
