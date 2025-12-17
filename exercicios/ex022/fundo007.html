@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alinhament Vertical</title>
+    <style>
+        *{
+            margin: 0;
+        }
+        #container {
+            background-size: 100% 100%;
+
+            position: relative;
+            height: 500px;
+            background-color: dimgray;
+            padding: 10px;
+
+        }
+        #conteudo {
+            position: absolute;
+            width: 400px;
+            height: 200px;
+            background-color: rgb(94, 56, 56);
+
+            left: 50%;
+            top: 50%;
+
+            transform: translate(-50%, -50%);
+
+        }
+    </style>
+</head>
+
+<body>
+    <section id="container">
+        <article id="conteudo">
+            <h1>Olá seja bem-vindo a nossa barbearia!</h1>
+        </article>
+    </section>
+</body>
+</html>
