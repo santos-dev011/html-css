@@ -25,9 +25,6 @@
 /* Celular */
 .header{
     position: fixed;
-
-    font-family: var(--fonte02);
-    text-align: center;
     top: 0;
     left: 0;
 
@@ -39,17 +36,17 @@
 
     z-index: 1000;
     border-radius: 0px 0px 10px 10px;
-    background: transparent;
-    background-color: #A60303;
     box-shadow: 0px 5px 10px var(--cor01);
 }
 
 nav{
+    font-family: var(--fonte02);
     padding: 10px;
 }
 
 nav.container {
-  max-width: 700px;
+  width: 100%;
+  max-width: 700px; /* mobile e tablet */
   margin: 0 auto;
   padding: 0 10px;
 
@@ -60,29 +57,67 @@ nav.container {
 }
 /* COnfiguração tela de pc */
 @media (min-width: 768px) {
-  .header {
-    max-width: 900px;   /* controla o "tamanho do menu" */
 
-    border-radius: 0px 0px 10px 10px;
-  }
+    .header {
+    width: 950px;
+    left: 50%;
+    transform: translateX(-50%);}
 
-  .nav {
-        margin: 0px auto;  /* cria espaço dos lados */
-    justify-content: space-between;
+  nav.container {
+    max-width: 900px; /* agora sim */
     padding: 0 24px;
   }
 }
 
 section.imagens{
-    height: 400px;
-    background-image: url('../imagens/fotobarbearia.webp');
-    text-align: center ;
+    height: 100vh;
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    background-repeat:no-repeat;
+    background-attachment: fixed;
+
+
     font-size: 1em;
     font-family: var(--fonte01);
 }
+div#logo{
+    display: flex;
+    background-size: cover;
+    background-position: top center;
+    max-height: 150px;
+    max-width: 150px;
+}
 
-article{
+div{
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.514);
+    margin: 20px;
+    font-size: 1.5em;
+    color: var(--cor05);
 
+}
+section#inicio{
+    background-image: url('../imagens/barbeariacerta.jpg');
+    background-position: center center;
+    background-size: cover;
+}
+
+article.botao{
+    width: 120px;
+    border-radius: 10px;
+    background-color: #8C030E;
+
+    text-align: center;
+    padding: 15px;
+
+}
+
+.imagens > article#horario{
+    margin: auto;
 }
 
 a{
