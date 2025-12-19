@@ -9,15 +9,101 @@
 :root{
     --fonte01: "Bebas Neue", sans-serif;
     --fonte02: "Montserrat", sans-serif;
-    --cor01: #030140;
-    --cor02: #1C618C;
-    --cor03: #1C6C8C;
+    --cor00: #000000;
+    --cor01: #093640;
+    --cor02: #0B5159;
+    --cor03: #14808C;
     --cor04: #B6ECF2;
     --cor05: #26A6A6;
 }
 
+html, body{
+    min-height: 100vh;
+    background-color: var(--cor02);
+    font-family: var(--fonte01);
+}
 
 *{
     margin: 0;
     padding: 0;
+}
+
+.imagem{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    height: 100vh;
+
+    color: var(--cor00);
+
+    background-attachment: fixed;
+    background-image: url('../imagens/barbeariacerta.jpg');
+    background-position: center center;
+    background-size: cover;
+
+    box-shadow: 1px 5px 10px rgba(0, 0, 0, 0.420);
+    
+}
+.imagem > div{
+    padding: 2%;
+    margin: 150px;
+
+    text-align: left;
+    font-size: 2em;
+    text-shadow: 1px 2px 5px #093640;
+
+    border: 3px solid #093640;
+    border-radius: 2%;
+    background-color: #0b5159b7;
+    color: var(--cor04);
+}
+.imagem > div > h1{
+    font-family: var(--fonte01);
+}
+.imagem > div > p{
+    font-family: var(--fonte02);
+}
+
+.sobre{
+    block-size: auto;
+    background-color: var(--cor01);
+
+    font-family: var(--fonte02);
+    height: 60vh;
+}
+.sobre > h1{
+    font-size: 3em;
+    font-family: var(--fonte01);
+
+    color: var(--cor04);
+    background-image: linear-gradient(to top, transparent, var(--cor02), var(--cor01));
+
+    width: 100vw;
+    padding: 2%;
+}
+.sobre > p{
+    
+    font-size: 20px;
+    text-align: center;
+    text-indent: 20px;
+
+    padding: 3%;
+
+    color: var(--cor04);
+}
+img{
+    display: block;
+    margin: auto;
+
+    border: 3px solid var(--cor05);
+    border-radius: 5%;
+    max-width: 100%;
+    height: 30vh;
+}
+img:hover{
+    transition: 1s;
+    border-style: hidden;
 }
