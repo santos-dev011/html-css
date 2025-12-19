@@ -86,7 +86,7 @@ section.imagens{
     background-repeat:no-repeat;
     background-attachment: fixed;
 
-    box-shadow: 0px 5px 20px black;
+    box-shadow: 0px 2px 10px black;
 
 
     font-size: 1em;
@@ -114,40 +114,89 @@ section#inicio{
     background-size: cover;
 }
 /* Tela de pc */
-@media(min-width: 769px){
-    section.servicos{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 15px;
+
+section.servicos{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    padding: 2%;
+    box-sizing: border-box;
     height: 70vh;
     width: 100vw;
-    background-color: #a62631ab;
-    }
+    background-color: #a62631c4;
+
 }
+
+div.svc{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+
+section.servicos > h1{
+    background-image: linear-gradient(to right, var(--cor02), transparent);
+
+    padding: 2%;
+
+    font-size: 80px;
+}
+
 /* celular */
-@media(max-width: 768px){
-section.servicos{
-    display: grid;
+@media(max-width: 600px){
+section.svc{
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
 
     height: 70vh;
+
+    
     background-color: #a62631ab;
 }
+    .cortes{
+        width: 95%;
+        margin-bottom: 10px;
+    }
+        section.servicos > h1{
+            background-image: linear-gradient(to right, var(--cor02), transparent);
+
+            padding: 20px;
+
+            font-size: 80px;
+        }
 }
 article.cortes{
-    display: block;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
 
-    background-color: rgba(0, 0, 0, 0.541);
+    width: 100vw;
+    border-color: transparent;
+    
+    text-decoration: none;
+
+    background-image: linear-gradient(to right, var(--cor02), transparent);
 
 
+    box-shadow: 1px 3px 10px black;
+    padding: 20px;
+}
 
-    border: 2px solid black;
-    border-radius: 10px;
+.corte > p{
+    font-display: block;
+    font-size: 1em;
 
-    margin: 10px;
-    padding: 10px;
+}
+
+article.cortes:hover{
+
+    box-shadow: inset 1px 4px 15px #8C030E;
+
+    background-image: linear-gradient(to right, var(--cor05), transparent);
+    transition: 0.2s;
+    color: var(--cor01);
+    background-color: var(--cor05);
 }
 
 article.botao{
@@ -169,7 +218,7 @@ article.botao:hover{
 }
 
 h1{
-
+    color: var(--cor05);
     font-family: var(--fonte01);
 }
 
