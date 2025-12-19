@@ -1,0 +1,23 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Passion+One:wght@400;700;900&family=Sriracha&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+:root{
+    --fonte01: "Bebas Neue", sans-serif;
+    --fonte02: "Montserrat", sans-serif;
+    --cor01: #8C030E;
+    --cor02: #A60303;
+    --cor03: #A62631;
+    --cor04: #A6826D;
+    --cor05: #F2F0D0;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
