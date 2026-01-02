@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício de Tabelas</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table{
+            width: 600px;
+            border-collapse: collapse;
+        }
+        caption{
+            font-size: 1.3em;
+            font-weight: bold;
+            padding: 10px;
+        }
+        th,td{
+            border: 1px solid black;
+            padding: 10px;
+        }
+        col.cnome{
+            background-color: greenyellow;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exercício de Tabelas</h1>
+
+    <table>
+        <colgroup>
+            <col class="cnome">
+            <col class="csexo">
+            <col class="cidadade">
+            <col class="cprofissao">
+        </colgroup>
+        <caption>cadastro</caption>
+        <tr>
+            <th scope="col">Nome</th>
+            <th scope="col">Sexo</th>
+            <th scope="col">Idade</th>
+            <th scope="col">Profissão</th>
+        </tr>
+        <tr>
+            <td>Ana maria Braga</td>
+            <td>Feminino</td>
+            <td>25</td>
+            <td>Engenheira</td>
+        </tr>
+        <tr>
+            <td>Jonathan</td>
+            <td>Masculino</td>
+            <td>20</td>
+            <td>Pedreiro</td>
+        </tr>
+        <tr>
+            <td>Roberta</td>
+            <td>Feminino</td>
+            <td>30</td>
+            <td>Advogada</td>
+        </tr>
+        <tr>
+            <td>Roanld</td>
+            <td>Masculino</td>
+            <td>25</td>
+            <td>Programador</td>
+        </tr>
+        <tr>
+            <td>Jéssica</td>
+            <td>Feminino</td>
+            <td>28</td>
+            <td>Designer</td>
+        </tr>
+        <tr >
+            <td>Kauê</td>
+            <td>Masculino</td>
+            <td>22</td>
+            <td>Estudante</td>
+        </tr>
+    </table>
+</body>
+</html>
