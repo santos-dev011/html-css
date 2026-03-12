@@ -17,4 +17,6 @@ body{
     color: white;
     text-shadow: 3px 2px 0px #10185e;
     padding: 10px;
+    background-repeat: no-repeat;
+    background-size: contain;
 }
